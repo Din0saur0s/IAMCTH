@@ -76,17 +76,6 @@ RStudioCloud
     # Найдите топ-10 участников сети, проявляющих наибольшую сетевую активность.
     library(dplyr)
 
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
     log.2 <- log %>%
                    group_by(ip_host) %>%
                    summarise(N = n()
